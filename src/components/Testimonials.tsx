@@ -19,31 +19,30 @@ const Testimonials = () => {
         "Masterly demonstrated strong frontend development skills during his internship at IBF. He played a key role in building a responsive UI with Vue and Quasar and collaborated well with our backend team.",
       author: "Nov Panha",
       role: "Digital Manager, Institute of Banking and Finance",
-      avatar:
-        "https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?w=400&auto=format&fit=crop&q=60",
+      avatar: "/img/ibfmanager.jpeg",
     },
     {
-  id: 2,
-  content:
-    "Masterly showed strong dedication and fast learning throughout my Vue.js class. He applied concepts quickly into real projects, asked smart questions, and demonstrated great potential as a frontend developer.",
-  author: "Mr. Pheakdey",
-  role: "Vue.js Instructor, Reanweb.com",
-  avatar:
-    "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=400&auto=format&fit=crop&q=60",
-},
+      id: 2,
+      content:
+        "Masterly showed strong dedication and fast learning throughout my Vue.js class. He applied concepts quickly into real projects, asked smart questions, and demonstrated great potential as a frontend developer.",
+      author: "Mr. Pheakdey",
+      role: "Vue.js Instructor, Reanweb.com",
+      avatar: "/img/reanweb.jpeg",
+    },
     {
       id: 3,
       content:
         "Masterly is a reliable teammate who brings passion and precision to every project. He contributes actively, handles complex features independently, and always strives to improve.",
       author: "Thavrith Sroas",
       role: "Teammate – ITCShop Project",
-      avatar:
-        "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&auto=format&fit=crop&q=60",
+      avatar: "img/friend.jpeg",
     },
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [visibleTestimonials, setVisibleTestimonials] = useState<Testimonial[]>([]);
+  const [visibleTestimonials, setVisibleTestimonials] = useState<Testimonial[]>(
+    []
+  );
   const isMobile = useIsMobile();
 
   useEffect(() => {

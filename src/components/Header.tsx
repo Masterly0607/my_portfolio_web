@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { Moon, Sun } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -41,7 +40,10 @@ const Header = () => {
 
   // Check for system preference on initial load
   useEffect(() => {
-    if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+    if (
+      window.matchMedia &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches
+    ) {
       setIsDarkMode(true);
       document.documentElement.classList.add("dark");
     }
@@ -62,7 +64,7 @@ const Header = () => {
           className="text-xl font-poppins font-bold text-foreground hover:text-primary transition-colors"
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-          Sok Masterly – Full-Stack Engineer
+            Sok Masterly – Full-Stack Developer
           </span>
         </a>
 
@@ -123,7 +125,11 @@ const Header = () => {
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 strokeWidth={2}
-                d={isMobileMenuOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16m-7 6h7"}
+                d={
+                  isMobileMenuOpen
+                    ? "M6 18L18 6M6 6l12 12"
+                    : "M4 6h16M4 12h16m-7 6h7"
+                }
               />
             </svg>
           </Button>

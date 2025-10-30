@@ -9,7 +9,8 @@ const Resume = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Resume</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Download my resume to see my full qualifications, experience and education details.
+            Download my resume to see my full qualifications, experience and
+            education details.
           </p>
         </div>
 
@@ -31,12 +32,16 @@ const Resume = () => {
                     <div>masterlysok@gmail.com</div>
                   </div>
                   <div>
-                    <div className="text-muted-foreground text-sm">Location</div>
+                    <div className="text-muted-foreground text-sm">
+                      Location
+                    </div>
                     <div>Phnom Penh, Cambodia</div>
                   </div>
                   <div>
-                    <div className="text-muted-foreground text-sm">Available for</div>
-                    <div>Frontend / Full-Stack Internships or Junior Developer Roles</div>
+                    <div className="text-muted-foreground text-sm">
+                      Available for
+                    </div>
+                    <div>Frontend / Backend / Full-Stack Developer Roles</div>
                   </div>
                 </div>
 
@@ -45,19 +50,37 @@ const Resume = () => {
                   <ul className="space-y-3 text-muted-foreground">
                     <li className="flex items-start">
                       <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary mt-2 mr-2"></span>
-                      <span>Year 4 Software Engineering student at ITC (2021–2025)</span>
+                      <span>
+                        Year 5 Software Engineering student at ITC (2022–2026)
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary mt-2 mr-2"></span>
-                      <span>Experience in real-world projects using Vue, Laravel, Flutter & Docker</span>
+                      <span>
+                        Experience in real-world projects using Vue, React,
+                        Laravel, Spring boot & Docker
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary mt-2 mr-2"></span>
-                      <span>Frontend Developer Intern at Institute of Banking and Finance (2024)</span>
+                      <span>
+                        Frontend Developer Intern at Institute of Banking and
+                        Finance (2024)
+                      </span>
                     </li>
                     <li className="flex items-start">
                       <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary mt-2 mr-2"></span>
-                      <span>Passionate about full-stack web, mobile apps, and clean UI/UX</span>
+                      <span>
+                        Web Developer Intern at Institute of Technology of
+                        Cambodia (2025)
+                      </span>
+                    </li>
+                    <li className="flex items-start">
+                      <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary mt-2 mr-2"></span>
+                      <span>
+                        Passionate about full-stack web development and creating
+                        clean, user-friendly interfaces.
+                      </span>
                     </li>
                   </ul>
                 </div>
@@ -70,7 +93,8 @@ const Resume = () => {
               <FileText className="h-16 w-16 text-primary mb-4" />
               <h3 className="text-2xl font-bold mb-2">My Resume</h3>
               <p className="text-center text-muted-foreground mb-6">
-                Download my complete resume to learn more about my experience, skills, and qualifications.
+                Download my complete resume to learn more about my experience,
+                skills, and qualifications.
               </p>
               <div className="flex flex-wrap gap-4">
                 <Button className="rounded-full" asChild>

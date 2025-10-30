@@ -2,8 +2,8 @@ import { Card, CardContent } from "@/components/ui/card";
 
 interface Skill {
   name: string;
-  level: number;
-  color: string;
+  level: number; // 0-100
+  color: string; // tailwind gradient end classes
 }
 
 interface SkillCategory {
@@ -12,41 +12,54 @@ interface SkillCategory {
 }
 
 const Skills = () => {
+  // Updated to align with your CV screenshots: React, Vue/Quasar, Laravel/Filament, Spring Boot,
+  // MySQL, Docker, AWS, GitHub, Postman, VS Code, Tailwind CSS, JWT, etc.
   const skillCategories: SkillCategory[] = [
     {
       title: "Languages",
       skills: [
-        { name: "JavaScript", level: 90, color: "from-yellow-400 to-yellow-500" },
-        { name: "TypeScript", level: 85, color: "from-blue-500 to-blue-600" },
-        { name: "PHP", level: 80, color: "from-indigo-500 to-indigo-600" },
-        { name: "Java", level: 75, color: "from-orange-500 to-orange-600" },
+        {
+          name: "JavaScript",
+          level: 90,
+          color: "from-yellow-400 to-yellow-500",
+        },
+        { name: "PHP", level: 85, color: "from-indigo-500 to-indigo-600" },
+        { name: "Java", level: 80, color: "from-orange-500 to-orange-600" },
         { name: "C / C++", level: 70, color: "from-gray-500 to-gray-600" },
-        { name: "Dart", level: 85, color: "from-teal-500 to-teal-600" },
       ],
     },
     {
       title: "Frameworks & Libraries",
       skills: [
         { name: "Vue.js", level: 90, color: "from-emerald-500 to-emerald-600" },
+        { name: "Quasar", level: 78, color: "from-purple-500 to-purple-600" },
         { name: "React", level: 85, color: "from-cyan-500 to-cyan-600" },
+        { name: "Next.js", level: 75, color: "from-sky-500 to-sky-600" },
         { name: "Laravel", level: 90, color: "from-red-500 to-red-600" },
-        { name: "NestJS", level: 80, color: "from-pink-500 to-pink-600" },
-        { name: "Express.js", level: 75, color: "from-lime-500 to-lime-600" },
-        { name: "Flutter", level: 85, color: "from-sky-500 to-sky-600" },
-        { name: "Quasar", level: 75, color: "from-purple-500 to-purple-600" },
+        { name: "Filament", level: 82, color: "from-rose-500 to-rose-600" },
+        { name: "Spring Boot", level: 78, color: "from-lime-500 to-lime-600" },
+        { name: "Tailwind CSS", level: 85, color: "from-teal-500 to-teal-600" },
       ],
     },
     {
-      title: "Tools & Technologies",
+      title: "Tools & Platforms",
       skills: [
-        { name: "Git & GitHub", level: 90, color: "from-purple-500 to-purple-600" },
-        { name: "Docker", level: 80, color: "from-blue-600 to-blue-700" },
-        { name: "Firebase", level: 85, color: "from-orange-400 to-orange-500" },
-        { name: "Figma", level: 70, color: "from-pink-400 to-pink-500" },
-        { name: "Postman", level: 75, color: "from-yellow-500 to-yellow-600" },
+        {
+          name: "Git & GitHub",
+          level: 90,
+          color: "from-fuchsia-500 to-fuchsia-600",
+        },
+        {
+          name: "Docker (Desktop)",
+          level: 80,
+          color: "from-blue-600 to-blue-700",
+        },
+        { name: "Postman", level: 82, color: "from-amber-500 to-amber-600" },
         { name: "VS Code", level: 90, color: "from-blue-400 to-blue-500" },
         { name: "MySQL", level: 85, color: "from-green-500 to-green-600" },
-        { name: "MongoDB", level: 70, color: "from-emerald-400 to-emerald-500" },
+        { name: "AWS", level: 70, color: "from-yellow-500 to-yellow-600" },
+        { name: "Figma", level: 72, color: "from-pink-400 to-pink-500" },
+        { name: "JWT / Auth", level: 78, color: "from-slate-500 to-slate-600" },
       ],
     },
   ];
@@ -58,7 +71,8 @@ const Skills = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            The technologies, languages, and tools I work with to build real-world projects.
+            The technologies, languages, and tools I use to build real-world
+            apps and systems.
           </p>
         </div>
 
@@ -82,7 +96,7 @@ const Skills = () => {
                         <div
                           className={`h-full bg-gradient-to-r ${skill.color} rounded-full`}
                           style={{ width: `${skill.level}%` }}
-                        ></div>
+                        />
                       </div>
                     </div>
                   ))}
@@ -93,27 +107,27 @@ const Skills = () => {
         </div>
 
         <div className="mt-16">
-          <h3 className="text-2xl font-bold text-center mb-8">Other Skills & Interests</h3>
+          <h3 className="text-2xl font-bold text-center mb-8">
+            Other Skills & Interests
+          </h3>
           <div className="flex flex-wrap justify-center gap-3">
             {[
               "Responsive Design",
-              "UI/UX Design",
+              "UI/UX Basics",
               "RESTful APIs",
               "OOP Principles",
-              "Firebase Console",
               "System Design",
-              "Full-stack Security",
+              "Full‑stack Web Security",
               "Agile & Collaboration",
               "Time Management",
               "Testing & Debugging",
               "Problem Solving",
-              "PostgreSQL",
-            ].map((skill, i) => (
+            ].map((chip, i) => (
               <div
                 key={i}
                 className="px-4 py-2 bg-card border border-border/50 rounded-full text-sm font-medium hover:bg-primary/10 transition-colors"
               >
-                {skill}
+                {chip}
               </div>
             ))}
           </div>
