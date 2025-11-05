@@ -54,10 +54,10 @@ const Hero = () => {
             style={{ animationDelay: "0.6s" }}
           >
             I’m a year 5 (final-year) Software Engineering student at ITC
-            specializing in full-stack development with Vue.js, React (Next.js),
-            Laravel, and Spring Boot. I love building clean, responsive, and
-            user-friendly web apps that turn ideas into real, impactful digital
-            experiences.
+            specializing in full-stack development with Vue.js, React.js,
+            Next.js, Node.js, Spring Boot, Laravel, and GraphQL. I love building
+            clean, responsive, and user-friendly web apps that turn ideas into
+            real, impactful digital experiences.
           </p>
 
           <div

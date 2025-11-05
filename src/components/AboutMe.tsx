@@ -7,13 +7,13 @@ const AboutMe = () => {
       icon: <BadgeCheck className="h-8 w-8 text-primary" />,
       title: "4+ Web Projects",
       description:
-        "Developed and deployed full-stack web applications using Vue.js, React, Laravel, Spring boot and Docker — including real internship and university projects.",
+        "Developed and deployed full-stack web applications using Vue.js, React.js, Next.js, Node.js, Spring Boot, Laravel, and GraphQL, and Docker, including real internship and university projects.",
     },
     {
       icon: <Award className="h-8 w-8 text-primary" />,
       title: "2+ Years of Experience",
       description:
-        "Practical experience building responsive web apps since 2023, including an internship at IBF and volunteering for the SEA Games.",
+        "Practical experience building responsive web apps since 2023, including an internship at IBF and CyberLab(ITC)",
     },
     {
       icon: <Briefcase className="h-8 w-8 text-primary" />,
@@ -46,14 +46,14 @@ const AboutMe = () => {
                     <p>
                       I’m a passionate full-stack web developer who loves
                       creating clean, responsive, and user-friendly applications
-                      using Vue.js, React (Next.js), Laravel, and Spring Boot. I
-                      enjoy turning ideas into modern, high-performing web
-                      experiences.
+                      using Vue.js, React.js, Next.js, Node.js, Spring boot,
+                      Laravel, and GraphQL. I enjoy turning ideas into modern,
+                      high-performing web experiences.
                     </p>
 
                     <p>
                       As a year 5 (final-year) Software Engineering student at
-                      ITC, I’ve built and deployed full-stack projects — from
+                      ITC, I’ve built and deployed full-stack projects from
                       e-commerce platforms with Laravel backends to dynamic
                       frontends with Vue.js and React. I focus on clean code,
                       scalability, and great user experience.
@@ -138,7 +138,7 @@ const AboutMe = () => {
                       </div>
                       <div className="font-medium">Web Developer Intern</div>
                       <div className="text-muted-foreground">
-                        Institute of Technology of Cambodia (ITC)
+                        CyberLab - Institute of Technology of Cambodia (ITC)
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
                         Developed a web-based inventory system using Laravel,
@@ -159,8 +159,8 @@ const AboutMe = () => {
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
                         Last-year student specializing in full-stack web
-                        development using Vue.js, React, Laravel, and Spring
-                        Boot.
+                        development using Vue.js, React, Nodejs, and Spring
+                        Boot, Laravel, and GraphQL.
                       </p>
                     </div>
                   </div>

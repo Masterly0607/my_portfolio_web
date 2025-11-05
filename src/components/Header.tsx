@@ -64,7 +64,7 @@ const Header = () => {
           className="text-xl font-poppins font-bold text-foreground hover:text-primary transition-colors"
         >
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
-            Sok Masterly – Full-Stack Developer
+            Sok Masterly – Full-stack Developer
           </span>
         </a>
 

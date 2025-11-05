@@ -22,7 +22,7 @@ const Resume = () => {
                 <div className="flex justify-between items-center mb-6">
                   <h3 className="text-2xl font-bold">Sok Masterly</h3>
                   <div className="bg-primary/10 text-primary rounded-full px-3 py-1 text-sm font-medium">
-                    Web Developer
+                    Full-stack Developer
                   </div>
                 </div>
 
@@ -58,7 +58,7 @@ const Resume = () => {
                       <span className="inline-block w-1.5 h-1.5 rounded-full bg-primary mt-2 mr-2"></span>
                       <span>
                         Experience in real-world projects using Vue, React,
-                        Laravel, Spring boot & Docker
+                        Next, Node, Spring Boot, Laravel, GraphQL, and Docker.
                       </span>
                     </li>
                     <li className="flex items-start">

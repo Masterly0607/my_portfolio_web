@@ -19,6 +19,16 @@ const Projects = () => {
 
   const projects: ProjectType[] = [
     {
+      title: "EazyShop – E-commerce Platform",
+      description:
+        "Built a full-stack shopping platform using React, Spring Boot, and MySQL, supporting secure authentication and role-based access. Deployed on AWS with optimized API performance and scalable backend architecture.",
+      image: "/img/eazyshop.png",
+      techStack: ["React.js", "Spring Boot", "MySQL", "AWS"],
+      githubLink: "https://github.com/Masterly0607/itcshop-customer",
+      liveLink: "https://itcshop-customer.netlify.app/",
+      category: ["web", "fullstack"],
+    },
+    {
       title: "ITCShop – E-commerce Platform",
       description:
         "A full-stack e-commerce web application built with Vue 3, Laravel 12, and MySQL. Features include authentication, product management, shopping cart, checkout, and admin panel.",
@@ -54,16 +64,6 @@ const Projects = () => {
         "Developed a branch-based stock management system using Laravel and Filament, featuring role-based access, stock ledger tracking, and real-time inventory control.",
       image: "/img/stock.png",
       techStack: ["Laravel", "Filament", "MySQL"],
-      githubLink: "https://github.com/Masterly0607/ibpf-framework",
-      liveLink: "#",
-      category: ["web", "fullstack"],
-    },
-    {
-      title: "EazyShop - E-commerce Platform",
-      description:
-        "Built a full-stack e-commerce platform (EazyShop) using React and Spring Boot, featuring product management, shopping cart, and secure order processing with RESTful APIs.",
-      image: "/img/eazyshop.png",
-      techStack: ["React", "Spring boot", "MySQL"],
       githubLink: "https://github.com/Masterly0607/ibpf-framework",
       liveLink: "#",
       category: ["web", "fullstack"],
