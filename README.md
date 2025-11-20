@@ -7,7 +7,7 @@ It showcases my projects, skills, resume, and a contact form for collaboration.
 
 ## 🌐 Live Demo
 
-**URL:** [https://masterly.netlify.app](https://masterly.netlify.app)
+**URL:** https://sok-masterly-portfolio.netlify.app/
 
 ---
 
