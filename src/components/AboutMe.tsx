@@ -5,21 +5,21 @@ const AboutMe = () => {
   const achievements = [
     {
       icon: <BadgeCheck className="h-8 w-8 text-primary" />,
-      title: "4+ Web Projects",
+      title: "Full-Stack Web Projects",
       description:
-        "Developed and deployed full-stack web applications using Vue.js, React.js, Next.js, Node.js, Spring Boot, Laravel, and GraphQL, and Docker, including real internship and university projects.",
+        "Built and deployed full-stack applications using Vue.js, React.js (Next.js), Laravel, Spring Boot, MySQL, MongoDB, and Docker for both internship and university projects.",
     },
     {
       icon: <Award className="h-8 w-8 text-primary" />,
-      title: "2+ Years of Experience",
+      title: "Real Internship Experience",
       description:
-        "Practical experience building responsive web apps since 2023, including an internship at IBF and CyberLab(ITC)",
+        "Hands-on experience from two internships at the Institute of Banking and Finance (IBF) and CyberLab (ITC), working with real systems, teams, and workflows.",
     },
     {
       icon: <Briefcase className="h-8 w-8 text-primary" />,
-      title: "B.Eng. in Software Engineering",
+      title: "Software Engineering Student",
       description:
-        "Last-year Software Engineering student at ITC, graduating in January 2026.",
+        "Final-year B.Eng. Software Engineering student at the Institute of Technology of Cambodia (ITC), expected to graduate in January 2026.",
     },
   ];
 
@@ -30,12 +30,13 @@ const AboutMe = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">About Me</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Get to know more about me, my background, and what drives me
-            forward.
+            Learn more about my background, skills, and what drives me as a
+            developer.
           </p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-12 items-center">
+          {/* LEFT SIDE */}
           <div className="w-full lg:w-1/2">
             <div className="relative">
               <div className="absolute -inset-4 rounded-xl bg-gradient-to-br from-primary to-accent opacity-20 blur-xl"></div>
@@ -44,26 +45,26 @@ const AboutMe = () => {
                   <h3 className="text-2xl font-bold mb-6">Who am I?</h3>
                   <div className="space-y-4 text-muted-foreground">
                     <p>
-                      I’m a passionate full-stack web developer who loves
-                      creating clean, responsive, and user-friendly applications
-                      using Vue.js, React.js, Next.js, Node.js, Spring boot,
-                      Laravel, and GraphQL. I enjoy turning ideas into modern,
-                      high-performing web experiences.
+                      I’m a full-stack web developer passionate about building
+                      clean, responsive, and user-friendly applications. I work
+                      mainly with Vue.js, React.js (Next.js), Laravel, and
+                      Spring Boot — creating modern web experiences from
+                      frontend UI to backend systems.
                     </p>
 
                     <p>
-                      As a year 5 (final-year) Software Engineering student at
-                      ITC, I’ve built and deployed full-stack projects from
-                      e-commerce platforms with Laravel backends to dynamic
-                      frontends with Vue.js and React. I focus on clean code,
-                      scalability, and great user experience.
+                      As a final-year Software Engineering student at ITC, I've
+                      built real projects such as e-commerce platforms,
+                      e-learning systems, and inventory management tools using
+                      technologies like Laravel, Vue.js, MySQL, MongoDB, and
+                      Docker.
                     </p>
 
                     <p>
-                      Beyond coding, I explore new web technologies, contribute
-                      to open source, and keep improving through hands-on
-                      learning. I’m excited to keep growing as a developer who
-                      builds meaningful web solutions.
+                      I’m always exploring new web technologies, contributing to
+                      open-source projects, and improving through hands-on
+                      learning. My goal is to build meaningful, stable, and
+                      scalable web applications that solve real problems.
                     </p>
                   </div>
 
@@ -71,15 +72,13 @@ const AboutMe = () => {
                     <h4 className="text-lg font-semibold mb-4">My Values</h4>
                     <ul className="list-disc pl-5 text-muted-foreground">
                       <li className="mb-2">
-                        Writing clean and easy-to-understand code
+                        Writing clean and maintainable code
                       </li>
                       <li className="mb-2">
-                        Creating simple and user-friendly web designs
+                        Designing simple and intuitive UI/UX
                       </li>
-                      <li className="mb-2">
-                        Always learning and improving my skills
-                      </li>
-                      <li>Working with others and sharing knowledge</li>
+                      <li className="mb-2">Continuously learning new skills</li>
+                      <li>Collaborating and sharing knowledge with others</li>
                     </ul>
                   </div>
                 </CardContent>
@@ -87,6 +86,7 @@ const AboutMe = () => {
             </div>
           </div>
 
+          {/* RIGHT SIDE */}
           <div className="w-full lg:w-1/2">
             <div className="grid grid-cols-1 gap-6">
               {achievements.map((achievement, index) => (
@@ -108,6 +108,7 @@ const AboutMe = () => {
                 </div>
               ))}
 
+              {/* Education & Experience */}
               <Card className="overflow-hidden card-hover">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-semibold mb-4">
@@ -115,9 +116,10 @@ const AboutMe = () => {
                   </h3>
 
                   <div className="space-y-4">
+                    {/* IBF Internship */}
                     <div className="border-l-2 border-primary pl-4">
                       <div className="text-sm text-muted-foreground">
-                        Aug 2024 – Jan 2025
+                        Aug 2024 – Jan 2025 (6 months)
                       </div>
                       <div className="font-medium">
                         Frontend Web Developer Intern
@@ -126,27 +128,31 @@ const AboutMe = () => {
                         Institute of Banking and Finance (IBF)
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Built frontend for an internal e-learning platform using
-                        Vue.js. Collaborated with backend developers to
-                        integrate APIs and improve UI performance.
+                        Developed a responsive frontend for an internal
+                        e-learning system using Vue.js and Quasar. Worked
+                        closely with backend developers to integrate APIs.
                       </p>
                     </div>
 
+                    {/* CyberLab Internship */}
                     <div className="border-l-2 border-primary/80 pl-4">
                       <div className="text-sm text-muted-foreground">
-                        Aug 2025 – Oct 2025
+                        Aug 2025 – Oct 2025 (3 months)
                       </div>
-                      <div className="font-medium">Web Developer Intern</div>
+                      <div className="font-medium">
+                        Backend Developer Intern
+                      </div>
                       <div className="text-muted-foreground">
-                        CyberLab - Institute of Technology of Cambodia (ITC)
+                        CyberLab – Institute of Technology of Cambodia
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Developed a web-based inventory system using Laravel,
-                        Filament, and MySQL with role-based access and real-time
-                        stock management features.
+                        Built a web-based inventory system using Laravel,
+                        Filament, and MySQL. Implemented real-time stock control
+                        and role-based access across branches.
                       </p>
                     </div>
 
+                    {/* Education */}
                     <div className="border-l-2 border-primary/60 pl-4">
                       <div className="text-sm text-muted-foreground">
                         2022 – Present
@@ -158,9 +164,8 @@ const AboutMe = () => {
                         Institute of Technology of Cambodia (ITC)
                       </div>
                       <p className="text-sm text-muted-foreground mt-1">
-                        Last-year student specializing in full-stack web
-                        development using Vue.js, React, Nodejs, and Spring
-                        Boot, Laravel, and GraphQL.
+                        Specializing in full-stack development using Vue.js,
+                        React.js, Laravel, Spring Boot, MySQL, and MongoDB.
                       </p>
                     </div>
                   </div>

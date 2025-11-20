@@ -69,13 +69,19 @@ const Contact = () => {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="h-5 w-5 text-primary mr-3" />
-                  <a href="mailto:masterlysok@gmail.com" className="hover:text-primary transition-colors">
-                    masterlysok@gmail.com
+                  <a
+                    href="mailto:masterlysok@gmail.com"
+                    className="hover:text-primary transition-colors"
+                  >
+                    sokmasterlychanon06@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center">
                   <Phone className="h-5 w-5 text-primary mr-3" />
-                  <a href="tel:+855973331501" className="hover:text-primary transition-colors">
+                  <a
+                    href="tel:+855973331501"
+                    className="hover:text-primary transition-colors"
+                  >
                     +855 97 333 1501
                   </a>
                 </div>

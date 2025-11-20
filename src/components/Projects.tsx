@@ -19,41 +19,21 @@ const Projects = () => {
 
   const projects: ProjectType[] = [
     {
-      title: "EazyShop – E-commerce Platform",
-      description:
-        "Built a full-stack shopping platform using React, Spring Boot, and MySQL, supporting secure authentication and role-based access. Deployed on AWS with optimized API performance and scalable backend architecture.",
-      image: "/img/eazyshop.png",
-      techStack: ["React.js", "Spring Boot", "MySQL", "AWS"],
-      githubLink: "https://github.com/Masterly0607/itcshop-customer",
-      liveLink: "https://itcshop-customer.netlify.app/",
-      category: ["web", "fullstack"],
-    },
-    {
       title: "ITCShop – E-commerce Platform",
       description:
-        "A full-stack e-commerce web application built with Vue 3, Laravel 12, and MySQL. Features include authentication, product management, shopping cart, checkout, and admin panel.",
+        "Built a full e-commerce platform with customer and admin modules using Vue.js, Laravel, and MySQL. Implemented secure authentication, product management, shopping cart, checkout, Laravel Sanctum, and Dockerized deployment on DigitalOcean.",
       image: "/img/itcshop.png",
-      techStack: ["Vue.js", "Laravel", "MySQL", "Tailwind CSS", "Docker"],
+      techStack: ["Vue.js", "Laravel", "MySQL", "Docker"],
       githubLink: "https://github.com/Masterly0607/itcshop-customer",
       liveLink: "https://itcshop-customer.netlify.app/",
       category: ["web", "fullstack"],
     },
     {
-      title: "Personal Portfolio Website",
+      title: "E-Learning System (IBF Internship)",
       description:
-        "Responsive and modern developer portfolio built with React and Tailwind CSS, showcasing projects, resume, and contact form integration.",
-      image: "/img/portfolio.png",
-      techStack: ["React", "TypeScript", "Tailwind CSS", "Vite"],
-      githubLink: "https://github.com/Masterly0607/my_portfolio_web",
-      liveLink: "https://sok-masterly-portfolio.netlify.app/",
-      category: ["web"],
-    },
-    {
-      title: "E-Learning System",
-      description:
-        "An internal e-learning system developed during internship, designed to manage lessons, quizzes, users, and certifications using Laravel and Vue.",
+        "Frontend development for an internal e-learning platform using Vue.js and Quasar. Built course pages, UI components, custom audio/video players, and collaborated closely with backend developers to integrate APIs.",
       image: "/img/ibf.png",
-      techStack: ["Vue.js", "Laravel", "Quasar"],
+      techStack: ["Vue.js", "Quasar", "REST API"],
       githubLink: "https://github.com/Masterly0607/ibpf-framework",
       liveLink: "#",
       category: ["web"],
@@ -61,12 +41,22 @@ const Projects = () => {
     {
       title: "ITC Stock Management System",
       description:
-        "Developed a branch-based stock management system using Laravel and Filament, featuring role-based access, stock ledger tracking, and real-time inventory control.",
+        "Developed a branch-based stock management system using Laravel, Filament, and MySQL. Implemented role-based access, stock ledger tracking, and real-time stock control across branches.",
       image: "/img/stock.png",
       techStack: ["Laravel", "Filament", "MySQL"],
-      githubLink: "https://github.com/Masterly0607/ibpf-framework",
+      githubLink: "https://github.com/Masterly0607/itc-stock-management",
       liveLink: "#",
       category: ["web", "fullstack"],
+    },
+    {
+      title: "Personal Portfolio Website",
+      description:
+        "A modern developer portfolio built with React and TypeScript featuring reusable components, responsive layout, project showcase, and contact system.",
+      image: "/img/portfolio.png",
+      techStack: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      githubLink: "https://github.com/Masterly0607/my_portfolio_web",
+      liveLink: "https://sok-masterly-portfolio.netlify.app/",
+      category: ["web"],
     },
   ];
 
@@ -74,7 +64,6 @@ const Projects = () => {
     { value: "all", label: "All Projects" },
     { value: "web", label: "Web Apps" },
     { value: "fullstack", label: "Full Stack" },
-    // { value: "productivity", label: "Productivity" },
   ];
 
   const filteredProjects =
@@ -89,8 +78,8 @@ const Projects = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8"></div>
           <p className="text-muted-foreground max-w-2xl mx-auto mb-10">
-            Explore my real-world and personal projects built during
-            internships, university courses, and self-learning.
+            Explore the real-world and personal projects I built during
+            internships, university coursework, and self-learning.
           </p>
 
           <div className="flex flex-wrap justify-center gap-2 mb-12">
@@ -130,6 +119,7 @@ const Projects = () => {
                   <p className="text-muted-foreground text-sm mb-4">
                     {project.description}
                   </p>
+
                   <div className="flex flex-wrap gap-2">
                     {project.techStack.map((tech, i) => (
                       <Badge key={i} variant="outline" className="bg-primary/5">
@@ -146,25 +136,26 @@ const Projects = () => {
                     className="rounded-full"
                     asChild
                   >
-                    {/* <a
+                    <a
                       href={project.githubLink}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <Github className="h-4 w-4 mr-2" />
                       Code
-                    </a> */}
+                    </a>
                   </Button>
-                  <Button size="sm" className="rounded-full" asChild>
-                    {/* <a
+
+                  {/* <Button size="sm" className="rounded-full" asChild>
+                    <a
                       href={project.liveLink}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       <ExternalLink className="h-4 w-4 mr-2" />
                       Live Demo
-                    </a> */}
-                  </Button>
+                    </a>
+                  </Button> */}
                 </CardFooter>
               </div>
             </Card>

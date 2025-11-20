@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 interface Skill {
   name: string;
   level: number; // 0-100
-  color: string; // tailwind gradient end classes
+  color: string;
 }
 
 interface SkillCategory {
@@ -27,7 +27,7 @@ const categories: SkillCategory[] = [
     skills: [
       { name: "Vue.js", level: 90, color: "from-emerald-500 to-emerald-600" },
       { name: "Quasar", level: 78, color: "from-purple-500 to-purple-600" },
-      { name: "React", level: 85, color: "from-cyan-500 to-cyan-600" },
+      { name: "React.js", level: 85, color: "from-cyan-500 to-cyan-600" },
       { name: "Next.js", level: 75, color: "from-sky-500 to-sky-600" },
       { name: "Tailwind CSS", level: 85, color: "from-teal-500 to-teal-600" },
     ],
@@ -35,16 +35,13 @@ const categories: SkillCategory[] = [
   {
     title: "Backend & APIs",
     skills: [
-      { name: "Node.js", level: 85, color: "from-lime-500 to-lime-600" },
-      { name: "Express.js", level: 83, color: "from-green-500 to-green-600" },
       { name: "Laravel", level: 90, color: "from-red-500 to-red-600" },
       { name: "Filament", level: 82, color: "from-rose-500 to-rose-600" },
       {
         name: "Spring Boot",
-        level: 82,
+        level: 80,
         color: "from-orange-500 to-orange-600",
       },
-      { name: "GraphQL", level: 78, color: "from-pink-500 to-pink-600" },
       { name: "REST API", level: 88, color: "from-slate-500 to-slate-600" },
       { name: "JWT / Auth", level: 80, color: "from-zinc-500 to-zinc-600" },
     ],
@@ -64,24 +61,10 @@ const categories: SkillCategory[] = [
         level: 90,
         color: "from-fuchsia-500 to-fuchsia-600",
       },
-      {
-        name: "Docker (Desktop)",
-        level: 80,
-        color: "from-blue-600 to-blue-700",
-      },
+      { name: "Docker Desktop", level: 78, color: "from-blue-600 to-blue-700" },
       { name: "Postman", level: 82, color: "from-amber-500 to-amber-600" },
       { name: "VS Code", level: 90, color: "from-blue-400 to-blue-500" },
       { name: "Figma", level: 72, color: "from-pink-400 to-pink-500" },
-      {
-        name: "CI/CD (Basics)",
-        level: 65,
-        color: "from-indigo-400 to-indigo-500",
-      },
-      {
-        name: "AWS (EC2 / RDS / S3)",
-        level: 75,
-        color: "from-yellow-500 to-yellow-600",
-      },
     ],
   },
 ];
@@ -115,8 +98,8 @@ const Skills = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Skills</h2>
           <div className="w-24 h-1 bg-primary mx-auto mb-8" />
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            The technologies, languages, and tools I use to build real-world
-            apps and systems.
+            Tools, technologies, and languages I use to build real-world
+            systems.
           </p>
         </div>
 
@@ -149,19 +132,22 @@ const Skills = () => {
           <h3 className="text-2xl font-bold text-center mb-8">
             Other Skills & Interests
           </h3>
+
           <div className="flex flex-wrap justify-center gap-3">
             {[
-              "Responsive Design",
-              "UI/UX Basics",
-              "GraphQL Schema Design",
-              "RESTful APIs",
               "OOP Principles",
               "System Design",
-              "Full‑stack Web Security",
-              "Agile & Collaboration",
-              "Time Management",
-              "Testing & Debugging",
+              "RESTful APIs",
+              "Full-Stack Web Security",
+              "Cybersecurity Basics",
+              "Responsive Web Design",
+              "UI/UX Basics",
               "Problem Solving",
+              "Team Collaboration",
+              "Agile Workflow",
+              "Testing & Debugging",
+              "Time Management",
+              "Fast Learning",
             ].map((chip) => (
               <div
                 key={chip}
